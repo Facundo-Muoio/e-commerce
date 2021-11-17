@@ -5,10 +5,10 @@ const NavBar = () => {
     return(
         <nav className="container">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Tienda</a></li>
+                <li><a href="https://github.com/enimsidroweht/e-commerce">Home</a></li>
+                <li><a href="https://github.com/enimsidroweht/e-commerce">Contacto</a></li>
+                <li><a href="https://github.com/enimsidroweht/e-commerce">Perfil</a></li>
+                <li><a href="https://github.com/enimsidroweht/e-commerce">Tienda</a></li>
             </ul>
         </nav>
     )
