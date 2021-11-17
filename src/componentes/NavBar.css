@@ -1,0 +1,40 @@
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.container{
+    width: 100vw;
+    display: block;
+    background-color: chocolate;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    background-color: chocolate;
+    list-style-type: none;
+}
+
+ul li{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
