@@ -11,7 +11,7 @@
     background-color: chocolate;
     height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -22,6 +22,7 @@ ul {
     justify-content: center;
     background-color: chocolate;
     list-style-type: none;
+    margin-left: 12px;
 }
 
 ul li{
