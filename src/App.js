@@ -6,6 +6,10 @@ import ItemListContainer from './componentes/ItemListContainer/ItemListContainer
 
 
 function App() {
+  // countre es la variable que define nuestro state
+  // setCounter es la funcion que nos permite modificar el estado
+  // lo que pasamos luego del operador de asignacion es el valor de counter
+
   return (
     <Fragment>
       <NavBar/>
@@ -16,3 +20,5 @@ function App() {
 }
 
 export default App;
+
+
