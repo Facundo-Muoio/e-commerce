@@ -3,7 +3,7 @@ import "./ItemListContainer.css"
 import btc from "../assets/btc.png"
 import {AiFillPlusCircle} from "react-icons/ai"
 import {AiFillMinusCircle} from "react-icons/ai"
-
+import ItemList  from './ItemList/ItemList'
 
 
 export const ItemListContainer = ({greeting}) => {
@@ -17,7 +17,7 @@ export const ItemListContainer = ({greeting}) => {
         <>
           <p className="greeting">{greeting}</p> 
           <div className="cardTokens">
-            <img className="imgTokens" src={btc}></img>
+            <img className="imgTokens" alt="Bitcoin" src={btc}></img>
             <h3 className="titleTokens">Bitcoin</h3>
             <div className="btnsCards">
               <button className="remover" onClick={remove}><AiFillMinusCircle/></button>
@@ -25,6 +25,10 @@ export const ItemListContainer = ({greeting}) => {
               <button className="agregar" onClick={add}><AiFillPlusCircle/></button>
             </div>
           </div> 
+          <h1>Desarolladores del Token</h1>
+          <div className="display__devs">
+            <ItemList/>
+          </div>
         </>
     )
 }

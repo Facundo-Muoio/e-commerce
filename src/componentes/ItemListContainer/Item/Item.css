@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.card__desarolladores{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
