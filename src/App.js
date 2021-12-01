@@ -4,6 +4,7 @@ import "./App.css"
 // componentes
 import NavBar  from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <NavBar/>
       <h1>El monedero</h1>
       <ItemListContainer greeting = "Bienvenido a El Monedero, tu exchange de cryptos."/>
+      <ItemDetailContainer/>
     </Fragment>
   );
 }

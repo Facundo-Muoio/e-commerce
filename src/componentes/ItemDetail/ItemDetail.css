@@ -1,0 +1,12 @@
+.containerItemDescription{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.containerItemDescription img, h2, h3{
+    color: black;
+}

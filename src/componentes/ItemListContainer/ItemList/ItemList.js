@@ -6,11 +6,14 @@ const ItemList = () => {
 
     const [users, setUsers] = useState([])
     
-    setTimeout(  useEffect(() =>{
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(json => setUsers(json))  
-    }, []), 3000)
+      useEffect(() =>{
+      setTimeout(()=>{
+          fetch('https://jsonplaceholder.typicode.com/users')
+              .then(response => response.json())
+              .then(json => setUsers(json))      
+      }, 2000)     
+    }, [])
+    
   
     return (
         <>
