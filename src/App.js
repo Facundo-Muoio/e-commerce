@@ -1,10 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import "./App.css"
 
 // componentes
+import Header from './componentes/Header/Header';
 import NavBar  from './componentes/NavBar/NavBar';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Home from "./views/Home/Home";
+import About from "./views/About/About";
+import Contact from './views/Contact/Contact';
+import Error from "./views/Error/Error"
 
 
 
@@ -14,12 +19,17 @@ function App() {
   // lo que pasamos luego del operador de asignacion es el valor de counter
 
   return (
-    <Fragment>
+    <Router>
+      <Header/>
       <NavBar/>
-      <h1>El monedero</h1>
-      <ItemListContainer greeting = "Bienvenido a El Monedero, tu exchange de cryptos."/>
-      <ItemDetailContainer/>
-    </Fragment>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
+        <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+      </Routes>
+    </Router>
   );
 }
 

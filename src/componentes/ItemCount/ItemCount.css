@@ -1,0 +1,30 @@
+.containerSumRestCantidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.containerSumRestCantidad button{
+    background-color: white;
+    border-radius: 4px;
+    border:1px solid black;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.addToCart{
+    background-color: white;
+    padding: 12px;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.addToCart:hover{
+    border: 1px solid black;
+}

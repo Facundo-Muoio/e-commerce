@@ -1,12 +1,15 @@
 .containerItemDescription{
-    border: 2px solid black;
+    border: 1px solid #efefef;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 500px;
+    width: 300px;
     margin: 20px auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.containerItemDescription img, h2, h3{
-    color: black;
+.containerItemDescription img{
+    width: 100%;
 }

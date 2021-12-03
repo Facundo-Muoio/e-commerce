@@ -1,0 +1,17 @@
+.headerContainer{
+    width: 100vw;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer h1{
+    color: white;
+}
+
+.btcLogo{
+    width: 80px;
+    height: 60px;
+}

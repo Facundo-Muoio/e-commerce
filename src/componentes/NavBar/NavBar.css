@@ -25,7 +25,7 @@ ul {
     margin-left: 12px;
 }
 
-ul li{
+.li {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 10px;

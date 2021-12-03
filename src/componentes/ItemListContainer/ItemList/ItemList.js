@@ -1,24 +1,27 @@
 import React, {useEffect, useState} from 'react'
 import "../Item/Item"
 import Item from '../Item/Item';
+import { Link } from "react-router-dom"
 
 const ItemList = () => {
 
-    const [users, setUsers] = useState([])
+    const [items, setItems] = useState([])
     
       useEffect(() =>{
       setTimeout(()=>{
-          fetch('https://jsonplaceholder.typicode.com/users')
+          fetch('https://www.breakingbadapi.com/api/characters')
               .then(response => response.json())
-              .then(json => setUsers(json))      
+              .then(json => setItems(json))      
       }, 2000)     
     }, [])
     
   
     return (
         <>
-            {users.map((user) => {
-                return <Item data={user} key={user.id} />;
+            {items.map((item) => {
+                return <Link to={`/detail/${item.char_id}`} key={item.char_id}>
+                            <Item data={item}/>
+                        </Link>
             })}
         </>
     )

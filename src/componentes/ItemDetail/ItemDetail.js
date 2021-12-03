@@ -1,12 +1,22 @@
 import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
 
-const ItemDetail = ({data}) => {
+
+const ItemDetail = ({otro}) => {
+    const addToCart = (cantidad) =>{
+        let producto;
+        cantidad > 1 ? producto = "productos" : producto= "producto";
+        alert(`Ingresaste ${cantidad} ${producto} al carrito de compras.`);
+    }
     return (
+
         <div className="containerItemDescription">
-            <img src={data.thumbnail} alt={data.title} width={300}/>
-            <h2>{data.price}</h2>
-            <h3>{data.title}</h3>
+            <img src={otro.img} alt={otro.name} width={300}/>
+            <p>{otro.name}</p>
+            <p>{otro.nickname}</p>
+            <p>{otro.birthday}</p>
+            <ItemCount  stock={5} initial={1} onAdd={addToCart} />
         </div>
     )
 }
