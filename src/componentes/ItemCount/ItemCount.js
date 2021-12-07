@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./ItemCount.css"
+import {Link} from "react-router-dom"
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const [cantidad, setCantidad] = useState(initial)
@@ -16,6 +17,10 @@ const ItemCount = ({stock, initial, onAdd}) => {
        }
    }
 
+   const saveToCart = () => {
+       localStorage.setItem("Producto Lista",JSON.stringify([cantidad]))
+   } 
+
     return (
         <>
          <div className="containerSumRestCantidad">
@@ -25,6 +30,9 @@ const ItemCount = ({stock, initial, onAdd}) => {
          </div>
          {
              cantidad > 0 ? <button className="addToCart" onClick={() => onAdd(cantidad)}>Sumar al carrito</button> : <button className="addToCart" disable="disable">Sumar al carrito</button>
+         }
+         {
+             cantidad > 0 ?<button className="buyNow" onClick={saveToCart}><Link to="/Cart">Comprar ahora</Link></button> : <button className="buyNow" disable="disable">Comprar ahora</button>
          }
         </>
     )

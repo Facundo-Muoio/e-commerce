@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
+import Cart from "./views/Cart/Cart"
 import Error from "./views/Error/Error"
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
         <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+        <Route path="/Cart" element={<Cart/>} />
       </Routes>
     </Router>
   );

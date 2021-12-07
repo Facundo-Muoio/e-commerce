@@ -17,14 +17,20 @@
     margin-right: 10px;
 }
 
-.addToCart{
+.addToCart, .buyNow{
     background-color: white;
     padding: 12px;
     border: 1px solid #efefef;
     border-radius: 4px;
     margin: 10px;
+    width: 80%;
 }
 
 .addToCart:hover{
+    border: 1px solid black;
+}
+
+
+.buyNow:hover{
     border: 1px solid black;
 }
