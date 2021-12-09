@@ -11,7 +11,8 @@ import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
 import Cart from "./views/Cart/Cart"
 import Error from "./views/Error/Error"
-
+import cardProvider, { CardContext } from './componentes/CardContext/CardContext';
+import CardProvider from './componentes/CardContext/CardContext';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Router>
       <Header/>
       <NavBar/>
+      <CardProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -31,6 +33,7 @@ function App() {
         <Route path="/detail/:id" element={<ItemDetailContainer/>} />
         <Route path="/Cart" element={<Cart/>} />
       </Routes>
+      </CardProvider>
     </Router>
   );
 }

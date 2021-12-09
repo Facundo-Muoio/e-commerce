@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import "./ItemCount.css"
 import {Link} from "react-router-dom"
 
+
 const ItemCount = ({stock, initial, onAdd}) => {
     const [cantidad, setCantidad] = useState(initial)
+
+   
 
     const sumarCantidad = () => {
         if(cantidad < stock){

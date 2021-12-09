@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
+import { CardContext } from '../CardContext/CardContext'
 
 
 const ItemDetail = ({otro}) => {
@@ -9,6 +10,10 @@ const ItemDetail = ({otro}) => {
         cantidad > 1 ? producto = "productos" : producto= "producto";
         alert(`Ingresaste ${cantidad} ${producto} al carrito de compras.`);
     }
+
+    const [card, setCard] = useContext(CardContext);
+    
+
     return (
 
         <div className="containerItemDescription">
