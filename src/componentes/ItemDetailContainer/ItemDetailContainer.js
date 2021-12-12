@@ -5,7 +5,6 @@ import { useParams } from 'react-router';
 
 const ItemDetailContainer = () => {
     let id = useParams();
-    console.log("ID:", id)
     let idItem = id.id
     const [item, setItem] = useState([]);
   
@@ -13,7 +12,7 @@ const ItemDetailContainer = () => {
         setTimeout(() => {
             fetch(`https://www.breakingbadapi.com/api/characters/${idItem}`)
             .then((response) => response.json())
-            .then(JSON => setItem(JSON[0]))
+            .then(res => setItem(res[0]))
         }, 1500) 
     }, [idItem])
 

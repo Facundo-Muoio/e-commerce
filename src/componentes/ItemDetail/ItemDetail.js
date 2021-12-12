@@ -1,18 +1,13 @@
 import React, { useContext } from 'react'
+import CartContext from "../CardContext/CardContext"
 import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
-import { CardContext } from '../CardContext/CardContext'
+
 
 
 const ItemDetail = ({otro}) => {
-    const addToCart = (cantidad) =>{
-        let producto;
-        cantidad > 1 ? producto = "productos" : producto= "producto";
-        alert(`Ingresaste ${cantidad} ${producto} al carrito de compras.`);
-    }
-
-    const [card, setCard] = useContext(CardContext);
-    
+  
+    const { addItem } = useContext(CartContext)
 
     return (
 
@@ -21,7 +16,7 @@ const ItemDetail = ({otro}) => {
             <p>{otro.name}</p>
             <p>{otro.nickname}</p>
             <p>{otro.birthday}</p>
-            <ItemCount  stock={5} initial={1} onAdd={addToCart} />
+            <ItemCount item={otro} stock={5} initial={1} addItem={addItem} />
         </div>
     )
 }

@@ -3,10 +3,9 @@ import "./ItemCount.css"
 import {Link} from "react-router-dom"
 
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({item, stock, initial, addItem}) => {
     const [cantidad, setCantidad] = useState(initial)
 
-   
 
     const sumarCantidad = () => {
         if(cantidad < stock){
@@ -32,7 +31,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
              <button onClick={sumarCantidad}>+</button>
          </div>
          {
-             cantidad > 0 ? <button className="addToCart" onClick={() => onAdd(cantidad)}>Sumar al carrito</button> : <button className="addToCart" disable="disable">Sumar al carrito</button>
+             cantidad > 0 ? <button className="addToCart" onClick={() => addItem({item, cantidad})}>Sumar al carrito</button> : <button className="addToCart" disable="disable">Sumar al carrito</button>
          }
          {
              cantidad > 0 ?<button className="buyNow" onClick={saveToCart}><Link to="/Cart">Comprar ahora</Link></button> : <button className="buyNow" disable="disable">Comprar ahora</button>
