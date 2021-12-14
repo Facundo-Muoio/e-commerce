@@ -11,7 +11,7 @@ import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
 import Cart from "./views/Cart/Cart"
 import Error from "./views/Error/Error"
-import CardProvider from './componentes/CardContext/CardContext';
+import CartProvider from './componentes/CartContext/CartContext';
 
 
 function App() {
@@ -20,20 +20,20 @@ function App() {
   // lo que pasamos luego del operador de asignacion es el valor de counter
 
   return (
-    <Router>
-      <Header/>
-      <NavBar/>
-      <CardProvider>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
-        <Route path="/detail/:id" element={<ItemDetailContainer/>} />
-        <Route path="/Cart" element={<Cart/>} />
-      </Routes>
-      </CardProvider>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Header/>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+          <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+          <Route path="/Cart" element={<Cart/>} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

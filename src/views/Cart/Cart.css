@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.containerCart{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin:20px 15px;
+}
+
+.containCart{
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.btnDeleteProduct, .btnEmptyCart{
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 12px;
+    color:white;
+}
+
+.btnDeleteProduct:hover{
+    cursor: pointer;
+    background-color: rgb(179, 11, 11);
+    border-color: rgb(179, 11, 11);
+}
+
+.btnEmptyCart:hover{
+    cursor: pointer;
+    background-color: rgb(179, 11, 11);
+    border-color: rgb(179, 11, 11);
+}

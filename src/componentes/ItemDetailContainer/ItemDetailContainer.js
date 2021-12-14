@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         setTimeout(() => {
             fetch(`https://www.breakingbadapi.com/api/characters/${idItem}`)
-            .then((response) => response.json())
+            .then((response) => response.json())    
             .then(res => setItem(res[0]))
         }, 1500) 
     }, [idItem])
