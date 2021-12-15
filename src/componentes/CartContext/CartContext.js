@@ -22,7 +22,7 @@ const CartProvider = ({children}) => {
             return prod
         })) 
         :
-         setItems([...items, {name: item.name, cantidad: qty, id: item.char_id}]);
+         setItems([...items, {name: item.name, cantidad: qty, id: item.char_id, price: 150}]);
     }
     
     const removeItem = (id) =>{

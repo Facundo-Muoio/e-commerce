@@ -1,15 +1,19 @@
 import React, { useContext } from 'react'
 import { CartContext } from"../../componentes/CartContext/CartContext"
 import "./Cart.css"
+import {Link} from "react-router-dom"
 
 export const Cart = () => {
 
     const {items, removeItem, clearItems} = useContext(CartContext);
+    
 
 
 
     return (
         <div className="containerCart">
+            {console.log(items.length)}
+            {items.length === 0 && <div className="containerEmptyCart"><p className="carritoVacío">Tu carrito esta vacío</p><Link className="liInicio" to="/">Volver al inicio</Link></div>}
             <div className="containCart">
                 {
                     items.map((item) => (

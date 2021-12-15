@@ -2,6 +2,7 @@ import {FaShoppingCart} from "react-icons/fa"
 import "./CartWidget.css"
 import React, {useContext} from 'react'
 import { CartContext } from "../CartContext/CartContext"
+import {Link} from "react-router-dom"
 
 
 export const CartWidget = () => {
@@ -14,12 +15,11 @@ export const CartWidget = () => {
     })
 
 
-
     return (
         <>
             <div>
                 {itemsInCart === 0 ? "" : itemsInCart }
-                <FaShoppingCart className="icono-carrito"/> 
+                <Link to="/Cart"><FaShoppingCart className="icono-carrito"/> </Link>
             </div>
         </>
     )

@@ -31,8 +31,28 @@
     border-color: rgb(179, 11, 11);
 }
 
+.containerEmptyCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+
 .btnEmptyCart:hover{
     cursor: pointer;
     background-color: rgb(179, 11, 11);
     border-color: rgb(179, 11, 11);
+}
+
+.carritoVacío{
+    text-align: center;
+    font-size: 3em;
+}
+
+.liInicio{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 20px;
 }
