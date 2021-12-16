@@ -6,9 +6,17 @@ import {Link} from "react-router-dom"
 export const Cart = () => {
 
     const {items, removeItem, clearItems} = useContext(CartContext);
-    
 
+        let acumDos = 0
+        let acumUno 
 
+        items.map((item) => {
+        acumUno = item.price * item.cantidad
+        acumDos = acumDos + acumUno
+        return acumDos
+    })
+
+ 
 
     return (
         <div className="containerCart">
@@ -19,12 +27,13 @@ export const Cart = () => {
                     items.map((item) => (
                         <div key={item.id}>
                             <br /><br />
-                            <h3>nombre:{item.name} id:{item.id} cantidad:{item.cantidad} </h3>
+                            <h3>nombre:{item.name} id:{item.id} cantidad:{item.cantidad} precio:{item.price * item.cantidad}</h3>
                             <button className="btnDeleteProduct" onClick={() => removeItem(item.id)}>Borrar producto</button>
                         </div>
-                    ))     
+                    ))
                 }
             </div>
+            <div>Precio TOTAL = {acumDos}</div>
             <button className="btnEmptyCart" onClick={() => clearItems()}>Empty cart</button>
         </div>
     )
