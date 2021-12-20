@@ -17,6 +17,10 @@
     margin-bottom: 30px;
 }
 
+.btnDeleteProduct{
+    margin-left: 12px;
+}
+
 .btnDeleteProduct, .btnEmptyCart{
     background-color: red;
     border: 2px solid red;
@@ -51,8 +55,13 @@
 
 .liInicio{
     background-color: black;
-    color: white;
+    color: white !important;
     border-radius: 4px;
     padding: 12px;
     margin-top: 20px;
+}
+
+.imgCartBook{
+    width: 180px;
+    margin-right: 20px;
 }

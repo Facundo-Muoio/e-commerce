@@ -1,0 +1,20 @@
+.formCheckOut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.formCheckOut input{
+    padding: 12px;
+    margin:  5px ;
+    width: 300px;
+}
+
+.formCheckOut button{
+    padding: 12px;
+    margin: 5px;
+    width: 300px;
+    background-color: forestgreen;
+    color: white;
+}

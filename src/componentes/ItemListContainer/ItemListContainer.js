@@ -7,8 +7,7 @@ export const ItemListContainer = ({greeting}) => {
     return (
         <>
           <p className="greeting">{greeting}</p> 
-          <h1>Desarolladores del Token</h1>
-          <div className="display__devs">
+          <div className="containerBooks">
             <ItemList/>
           </div>
         </>

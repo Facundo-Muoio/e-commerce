@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext } from"../../componentes/CartContext/CartContext"
 import "./Cart.css"
 import {Link} from "react-router-dom"
+import {Checkout} from "../../componentes/Checkout/Checkout"
 
 export const Cart = () => {
 
@@ -16,18 +17,17 @@ export const Cart = () => {
         return acumDos
     })
 
- 
 
     return (
         <div className="containerCart">
-            {console.log(items.length)}
             {items.length === 0 && <div className="containerEmptyCart"><p className="carritoVacío">Tu carrito esta vacío</p><Link className="liInicio" to="/">Volver al inicio</Link></div>}
             <div className="containCart">
                 {
                     items.map((item) => (
                         <div key={item.id}>
                             <br /><br />
-                            <h3>nombre:{item.name} id:{item.id} cantidad:{item.cantidad} precio:{item.price * item.cantidad}</h3>
+                            <span><img src={item.img} alt={item.titulo} className="imgCartBook"></img></span>
+                            <span>{item.titulo}{item.autor}{item.cantidad}${item.price}</span>
                             <button className="btnDeleteProduct" onClick={() => removeItem(item.id)}>Borrar producto</button>
                         </div>
                     ))
@@ -35,6 +35,7 @@ export const Cart = () => {
             </div>
             <div>Precio TOTAL = {acumDos}</div>
             <button className="btnEmptyCart" onClick={() => clearItems()}>Empty cart</button>
+            {items.length !== 0 && <Checkout/>}
         </div>
     )
 }
