@@ -11,7 +11,7 @@ export const CartWidget = () => {
     let itemsInCart = 0
 
     items.map((items) => {
-        itemsInCart = itemsInCart + items.cantidad
+       return itemsInCart = itemsInCart + items.cantidad
     })
 
 

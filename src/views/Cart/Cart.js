@@ -17,7 +17,6 @@ export const Cart = () => {
         return acumDos
     })
 
-
     return (
         <div className="containerCart">
             {items.length === 0 && <div className="containerEmptyCart"><p className="carritoVacío">Tu carrito esta vacío</p><Link className="liInicio" to="/">Volver al inicio</Link></div>}

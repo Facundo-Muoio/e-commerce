@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from 'react-router';
 import { db } from "../../firebase/firebaseConfig";
-import { collection, query, getDocs } from "firebase/firestore"; 
+import { collection, query, getDocs, where, documentId } from "firebase/firestore"; 
 
 
 const ItemDetailContainer = () => {
@@ -10,15 +10,10 @@ const ItemDetailContainer = () => {
     let idItem = id.id
     const [item, setItem] = useState([]);
     
-    const book = item.filter((book) => {
-        return book.id === idItem
-    })
-
-
     useEffect(() => {
        const getBooks = async () =>{
             const docs = []
-            const q = query(collection(db, "libros"));
+            const q = query(collection(db, "libros"), where(documentId(), "==", idItem));
             const querySnapshot = await getDocs(q);
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id})
@@ -26,13 +21,13 @@ const ItemDetailContainer = () => {
             setItem(docs);
         }
         getBooks()
-    }, []);
+    }, [idItem]);
 
 
     return (
         
         <>
-            {book.map((libro) => {
+            {item.map((libro) => {
                 return  <ItemDetail otro={libro} key={libro.id} />;
             })}
         </>

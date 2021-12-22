@@ -11,7 +11,7 @@ const NavBar = () => {
                 <Link className="li" to="/">Home</Link>
                 <Link className="li" to="/about">About</Link>
                 <Link className="li" to="/contact">Contact</Link>
-                <Link className ="li" to="/category/fantasia">Fantasía</Link>
+                <Link className ="li" to="/categorys/fantasía">Fantasía</Link>
             </ul>
             <CartWidget/>
         </nav>

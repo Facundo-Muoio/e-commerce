@@ -18,7 +18,7 @@ import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
 import Cart from "./views/Cart/Cart"
 import Error from "./views/Error/Error"
-import { Fantasía } from "./views/Category/Fantasía/Fantasía"
+import { BookByCategory } from "./views/Category/BookByCategory/BookByCategory"
 
 
 
@@ -38,7 +38,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
           <Route path="/detail/:id" element={<ItemDetailContainer/>} />
-          <Route path="/category/fantasia" element={<Fantasía />} />
+          <Route path="/categorys/:category" element={<BookByCategory/>} />
           <Route path="/Cart" element={<Cart/>} />
         </Routes>
       </Router>
