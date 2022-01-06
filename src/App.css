@@ -9,3 +9,12 @@ h1{
   text-align: center;
   font-size: 3em;
 }
+
+
+.bodyContainer{
+  width: 70%;
+  height: auto;
+  margin: 0px auto;
+  background-color: white;
+  box-shadow:  0 0 12px #c7c6c7;
+}

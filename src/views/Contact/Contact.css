@@ -1,0 +1,61 @@
+.containerContact h1{
+    border-bottom: 3px solid chocolate;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.containerContact p{
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    width: 80%;
+    margin: 0px auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.formContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 400px;
+    margin:30px auto;
+}
+
+.formContact div{
+    display: flex;
+    flex-direction: column;
+}
+
+.formContact div input, .formContact div button, select{
+    margin-top:20px;
+    padding: 12px 10px;
+}
+
+.formContact div input:focus,.formContact div select:focus{
+    outline: none;
+}
+
+.formContact textarea, textarea:focus{
+    width: 50%;
+    height: auto;
+    outline: none;
+    resize: none;
+}
+
+.formContact button{
+    background-color: #181818;
+    color:chocolate;
+    font-family: Bebas Neue, cursive;
+    font-size: 1.5rem;
+}
+
+.formContact input, .formContact select{
+    font-size: 18px;
+    font-family: Roboto,sans-serif;
+}
+
+.formContact textarea{
+    font-size: 18px;
+    font-family: Roboto,sans-serif;
+}

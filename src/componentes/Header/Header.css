@@ -1,17 +1,24 @@
 .headerContainer{
-    width: 100vw;
+    width: 100%;
     height: 150px;
-    background-color: black;
+    background-color: #181818;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
 }
 
 .headerContainer h1{
     color: white;
 }
 
-.btcLogo{
-    width: 80px;
-    height: 60px;
+
+.bookIcon{
+    color:chocolate;
+    font-size: 70px;
+}
+
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
 }

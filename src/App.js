@@ -8,17 +8,18 @@ import Header from './componentes/Header/Header';
 import NavBar  from './componentes/NavBar/NavBar';
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 import CartProvider from './componentes/CartContext/CartContext';
+import { Footer } from './componentes/Footer/Footer';
 
 // Router
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
 
 // Views
 import Home from "./views/Home/Home";
-import About from "./views/About/About";
 import Contact from './views/Contact/Contact';
 import Cart from "./views/Cart/Cart"
 import Error from "./views/Error/Error"
 import { BookByCategory } from "./views/Category/BookByCategory/BookByCategory"
+
 
 
 
@@ -28,21 +29,23 @@ function App() {
   // lo que pasamos luego del operador de asignacion es el valor de counter
 
   return (
-    <CartProvider>
-      <Router>
-        <Header/>
-        <NavBar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Error />} />
-          <Route path="/detail/:id" element={<ItemDetailContainer/>} />
-          <Route path="/categorys/:category" element={<BookByCategory/>} />
-          <Route path="/Cart" element={<Cart/>} />
-        </Routes>
-      </Router>
-    </CartProvider>
+    <div className="bodyContainer">
+      <CartProvider>
+        <Router>
+            <Header/>
+            <NavBar/>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Error />} />
+              <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+              <Route path="/categorys/:category" element={<BookByCategory/>} />
+              <Route path="/Cart" element={<Cart/>} />
+            </Routes>
+            <Footer/>
+        </Router>
+      </CartProvider>
+    </div>
   );
 }
 

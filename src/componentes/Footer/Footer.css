@@ -1,0 +1,155 @@
+.container-footer{
+    width: 100%;
+    height: 500px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-icons{
+    width: 90px;
+    height: 90px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FaTruck {
+    font-size: 40px;
+    color: white
+}
+
+
+.container-envios-regalos p{
+    color: chocolate;
+    font-size: 24px;
+    font-family:'Bebas Neue', cursive;
+    margin-left: 10px;
+}
+
+.container-envios span{
+    color: white;
+    position: relative;
+    bottom:50px;
+    margin-left: 10px;
+    font-family: Roboto, sans-serif;
+}
+
+.container__envios--p, .container__regalos--p{
+    color: white;
+    margin-bottom: 80px;
+}
+
+.container__envios--p span, .container__regalos--p span{
+    position: relative;
+    bottom: 50px;
+    margin-left: 10px;
+}
+
+.container-envios-regalos{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.container-novedades-promociones{
+    margin-top: 80px;
+    margin-left: 40px;
+    height: 60px;
+    width: 800px;
+}
+
+.container-novedades-promociones span{
+    color:chocolate;
+    font-size: 30px;
+    font-family:'Bebas Neue', cursive;
+}
+
+.container-novedades-promociones button{
+    border: none;
+    background-color: chocolate;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 2px;
+    margin-left: 4px;
+}
+
+.container-novedades-promociones input{
+   height: 40px; 
+   margin-left: 40px;
+   width: 250px;
+   padding: 5px 12px;
+   background-color: white;
+   font-family: Roboto;
+   font-size: 18px;
+   outline: none;
+   border: none;
+}
+
+.container-novedades-promociones input:focus{
+    outline: none;
+    border: 3px solid chocolate;
+}
+
+.GrSend{
+    font-size: 40px;
+    padding: 5px;
+    outline: none;
+}
+
+.container-redes{
+    color: chocolate;
+    font-size: 40px;
+    width: 200px;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+.p--redes{
+    font-size: 30px;
+    font-family:'Bebas Neue', cursive;
+}
+
+.iconTwitter{
+    font-size: 45px;
+    margin-left: 4px;
+}
+
+.iconInstragram{
+    font-size: 50px;
+    margin-left: 2px;
+}
+
+.container-copyright{
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    border-top: 1px solid chocolate;
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+.container-copyright img{
+    width: 150px;
+    height: 36px;
+}
+
+.inputError{
+    border: 3px solid red !important;
+}
+
+.inputSucces{
+    border: 3px solid green!important;
+}

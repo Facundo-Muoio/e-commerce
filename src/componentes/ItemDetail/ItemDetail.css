@@ -1,4 +1,4 @@
-.containerItemDescription{
+.containerCardItemDescription{
     border: 1px solid #efefef;
     border-radius: 4px;
     display: flex;
@@ -10,6 +10,68 @@
     justify-content: center;
 }
 
-.containerItemDescription img{
+.containerCardItemDescription img{
     width: 100%;
+}
+
+.containerDetail{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.containerDescripción{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 30px;
+    width: 480px;
+}
+
+.containerDescripción h1{
+    text-align: start;
+}
+
+.detailPrecio{
+    color: chocolate;
+}
+
+
+.container-NavBook{
+    width: 80%;
+    margin: 60px auto !important;
+
+}
+
+.btn-NavBook{
+    font-family:'Bebas Neue', cursive;
+    font-size: 30px;
+    background-color: white;
+    border:none;
+    margin-right: 10px;
+    width: 150px;
+    position: relative;
+    top: 3px;
+    border-bottom: 3px solid #eeeeee;
+}
+
+.btn-NavBook:hover{
+    border-bottom: 3px solid black;
+}
+
+.btn-NavBook:focus{
+    border-bottom: 3px solid black;
+    color: chocolate;
+}
+
+.container-btn-NavBook{
+    border-bottom: 3px solid #eeeeee;
+}
+
+.sinopsis--biografia{
+    font-family: var(--bs-body-font-family);
+    text-align: justify;
+    font-size: 18px;
 }

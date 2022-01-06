@@ -6,17 +6,17 @@ export const CartContext = createContext([]);
 
 const CartProvider = ({children}) => {
     const [items, setItems] = useState([])   
-
     const isInCart = (id) => {
         const found = items.find((item) => item.id === id)
         return found;
     }
 
     const addItem = (item, qty) => {
+        if(item.stock > 0){item.stock = item.stock - qty}
         isInCart(item.id) 
         ?
         setItems(items.map((prod) => {
-            if(prod.id === item.id) {
+            if(prod.id === item.id && item.stock >= 0)  {
                 prod.cantidad += qty
             }
             return prod
@@ -32,7 +32,8 @@ const CartProvider = ({children}) => {
                               editorial: item.editorial,
                               categoría: item.categoría,
                               nroPáginas: item["número de páginas"],
-                              fechaPublicación: item["fecha de publicación"]}]);
+                              fechaPublicación: item["fecha de publicación"],
+                              stock: item.stocks}]);
     }
     
     const removeItem = (id) =>{

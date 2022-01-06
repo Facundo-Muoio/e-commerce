@@ -1,0 +1,27 @@
+.containerInput{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inputSearch{
+    width: 800px;
+    height: 60px;
+    margin-top:60px;
+    margin-bottom: 60px;
+    padding: 5px 12px;
+    position: relative;
+    left: 10px;
+}
+
+.inputSearch::placeholder{
+    font-size: 24px;
+    font-family: roboto;
+}
+
+.FaSearch{
+    position:relative;
+    top:80px;
+    right: 50px;
+    font-size: 18px;
+}

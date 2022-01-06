@@ -14,14 +14,14 @@
 
 .containCart{
     border-radius: 4px;
-    margin-bottom: 30px;
+    width: 100%;
 }
 
 .btnDeleteProduct{
     margin-left: 12px;
 }
 
-.btnDeleteProduct, .btnEmptyCart{
+.btnDeleteProduct{
     background-color: red;
     border: 2px solid red;
     border-radius: 4px;
@@ -42,26 +42,49 @@
     margin: 0px auto;
 }
 
+.btnEmptyCart{
+    margin:0px auto;
+    width: 400px;
+    background-color: white;
+    border: 3px solid chocolate;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: Bebas Neue, cursive;
+    font-size: 24px;
+    transition: all 0.3s;
+}
+
 .btnEmptyCart:hover{
     cursor: pointer;
-    background-color: rgb(179, 11, 11);
-    border-color: rgb(179, 11, 11);
+    background-color: chocolate;
+    color: white;
 }
 
 .carritoVacío{
     text-align: center;
     font-size: 3em;
+    font-family:Bebas Neue, cursive;
 }
 
 .liInicio{
     background-color: black;
-    color: white !important;
+    color: chocolate!important;
     border-radius: 4px;
     padding: 12px;
     margin-top: 20px;
+    font-family: Bebas Neue, cursive;
+    font-size: 20px;
 }
 
 .imgCartBook{
     width: 180px;
     margin-right: 20px;
+}
+
+.priceTotal{
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 24px;
+    font-family: Bebas Neue, cursive;
 }

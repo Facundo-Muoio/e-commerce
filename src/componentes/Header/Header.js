@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-import btcLogo from "../assets/btcLogo.png"
+import { GiBookCover } from "react-icons/gi";
 import {Link} from "react-router-dom"
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <div className="headerContainer">
                 <Link to="/">
-                    <img src={btcLogo} className="btcLogo" alt="btcLogo"></img>
+                    <h1 className="logo">OPEN <GiBookCover className="bookIcon"/> BOOKS</h1>
                 </Link>
             </div>  
         </>

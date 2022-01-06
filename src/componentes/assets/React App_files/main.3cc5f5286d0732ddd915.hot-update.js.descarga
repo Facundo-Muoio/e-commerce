@@ -1,0 +1,26 @@
+webpackHotUpdate("main",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/componentes/ItemListContainer/ItemList/ItemList.css":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/componentes/ItemListContainer/ItemList/ItemList.css ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".containerInput{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: start;\r\n}\r\n\r\n.inputSearch{\r\n    width: 800px;\r\n    height: 60px;\r\n    margin-top:60px;\r\n    margin-bottom: 60px;\r\n    padding: 5px 12px;\r\n    position: relative;\r\n    left: 10px;\r\n}\r\n\r\n.inputSearch::placeholder{\r\n    font-size: 24px;\r\n    font-family: roboto;\r\n}\r\n\r\n.FaSearch{\r\n    position:relative;\r\n    top:80px;\r\n    right: 50px;\r\n    font-size: 24px;\r\n}", "",{"version":3,"sources":["webpack://src/componentes/ItemListContainer/ItemList/ItemList.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,eAAe;IACf,mBAAmB;IACnB,iBAAiB;IACjB,kBAAkB;IAClB,UAAU;AACd;;AAEA;IACI,eAAe;IACf,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,QAAQ;IACR,WAAW;IACX,eAAe;AACnB","sourcesContent":[".containerInput{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: start;\r\n}\r\n\r\n.inputSearch{\r\n    width: 800px;\r\n    height: 60px;\r\n    margin-top:60px;\r\n    margin-bottom: 60px;\r\n    padding: 5px 12px;\r\n    position: relative;\r\n    left: 10px;\r\n}\r\n\r\n.inputSearch::placeholder{\r\n    font-size: 24px;\r\n    font-family: roboto;\r\n}\r\n\r\n.FaSearch{\r\n    position:relative;\r\n    top:80px;\r\n    right: 50px;\r\n    font-size: 24px;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ })
+
+})
+//# sourceMappingURL=main.3cc5f5286d0732ddd915.hot-update.js.map

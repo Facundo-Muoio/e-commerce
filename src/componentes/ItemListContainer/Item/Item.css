@@ -8,7 +8,7 @@
     border: 1px solid #efefef;
     border-radius: 5px;
     width: 300px;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,4 +30,20 @@
     width: 100%;
     max-height: 400px;
     min-height: 400px;
+    object-fit:fill;
+}
+
+.card__desarolladores p{
+    font-family: Roboto;
+    font-size: 1em;
+
+}
+
+.precio{
+    font-size: 20px !important;
+    color: chocolate;
+}
+
+.colorAutorCategoría{
+    color: #707070;
 }

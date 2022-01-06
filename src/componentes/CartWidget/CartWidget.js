@@ -17,9 +17,9 @@ export const CartWidget = () => {
 
     return (
         <>
-            <div>
-                {itemsInCart === 0 ? "" : itemsInCart }
-                <Link to="/Cart"><FaShoppingCart className="icono-carrito"/> </Link>
+            <div className="containerCartWidget">
+                    {itemsInCart === 0 ? "" : <div className="containerItemsInCart">{itemsInCart}</div>}
+                <Link  className="linkIcon" to="/Cart"><FaShoppingCart className="icono-carrito"/></Link>
             </div>
         </>
     )

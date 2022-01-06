@@ -1,0 +1,21 @@
+.imgSize{
+    width: auto;
+    height: 100px;
+}
+
+.FaTrash{
+    font-size: 20px;
+    color: red;
+    width: 20px;
+    height: 20px;
+}
+
+.btnTrash{
+   border:none;
+   background-color: #2c3034
+}
+
+.table{
+    width: 80% !important;
+    margin: 60px  auto;
+}

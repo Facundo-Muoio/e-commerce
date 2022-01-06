@@ -6,7 +6,6 @@ import {Link} from "react-router-dom"
 const ItemCount = ({item, stock, initial, addItem}) => {
     const [cantidad, setCantidad] = useState(initial)
 
-
     const sumarCantidad = () => {
         if(cantidad < stock){
             setCantidad(cantidad + 1);
@@ -29,14 +28,16 @@ const ItemCount = ({item, stock, initial, addItem}) => {
         <>
          <div className="containerSumRestCantidad">
              <button onClick={restarCantidad}>-</button> 
-             <p>Cantidad: {cantidad}</p>
+             {
+             cantidad > stock ? <p>{setCantidad(stock)}</p> : <p>{cantidad}</p>
+             }
              <button onClick={sumarCantidad}>+</button>
          </div>
          {
-             cantidad > 0 ? <button className="addToCart" onClick={() => addItem(item, cantidad)}>Sumar al carrito</button> : <button className="addToCart" disable="disable">Sumar al carrito</button>
+             cantidad > 0 && stock > 0  ? <button className="addToCart" onClick={() => addItem(item, cantidad)}>Sumar al carrito</button> : <button className="addToCart" disable="disable">Sumar al carrito</button>
          }
          {
-             cantidad > 0 ? <button className="buyNow" onClick={saveToCart}><Link to="/Cart">Comprar ahora</Link></button> : <button className="buyNow" disable="disable">Comprar ahora</button>
+             cantidad <= stock ? <button className="buyNow" onClick={saveToCart}><Link  className="linkBuyNow" to="/Cart">Comprar ahora</Link></button> : <button className="buyNow" disable="disable">Comprar ahora</button>
          }
         </>
     )

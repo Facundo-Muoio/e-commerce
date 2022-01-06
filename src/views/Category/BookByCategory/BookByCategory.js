@@ -10,6 +10,7 @@ import "./BookByCategory.css"
 
 export const BookByCategory = () => {
      let bookCategorys = useParams()
+     console.log(bookCategorys)
      const [items, setItems] = useState([])
     
     useEffect(() => {

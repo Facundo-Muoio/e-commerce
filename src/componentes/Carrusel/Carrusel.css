@@ -1,0 +1,16 @@
+.imgHeight{
+    height: 300px;
+}
+
+.carousel{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 3px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+}

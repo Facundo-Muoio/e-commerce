@@ -1,7 +1,9 @@
 import React from 'react'
+import { Carrusel } from "../../componentes/Carrusel/Carrusel"
 // itemListContainer
 import ItemListContainer from '../../componentes/ItemListContainer/ItemListContainer'
 import "./Home.css"
+
 
 
 const Home = () => {
@@ -9,7 +11,8 @@ const Home = () => {
 
     return (
         <div>
-            <ItemListContainer greeting = "Bienvenido a El Monedero, tu exchange de cryptos." />
+            <Carrusel />
+            <ItemListContainer />
         </div>
     )
 }
