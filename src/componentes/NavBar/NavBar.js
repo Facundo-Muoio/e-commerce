@@ -16,6 +16,7 @@ const NavBar = () => {
                         <Link className ="li" to="/categorys/infantil">Infantil</Link>
                         <Link className ="li" to="/categorys/Juegos - Deportes - Recreación">Juegos - Deportes - Recreación</Link>
                         <Link className ="li" to="/categorys/terror">Terror</Link>
+                        <Link className ="li" to="/categorys/Ficción y Literatura">Ficción y Literatura</Link>
                     </ul>
                 </li>
             </ul>

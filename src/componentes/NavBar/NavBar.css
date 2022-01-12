@@ -49,11 +49,11 @@ a{
 
 .containerNavBar ul li ul{
     position:absolute;
-    left: -2px;
+    left: -3px;
     top:42px;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 254px;
     width: 320px;
     padding: 0px;
     margin:0px;

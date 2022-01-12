@@ -10,7 +10,7 @@ export const Carrusel = () => {
                 <Carousel.Item interval={3000}>
                 <img
                 className="d-block w-100 imgHeight"
-                src="https://tap-multimedia-1113.nyc3.digitaloceanspaces.com/slider/3757/large/Hola_vegan_1200x300.jpg"
+                src="https://tap-multimedia-1113.nyc3.digitaloceanspaces.com/slider/3782/large/Heartstopper_para_colorear_Cuspide_01.png"
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -19,7 +19,7 @@ export const Carrusel = () => {
             <Carousel.Item interval={3000}>
                 <img
                 className="d-block w-100 imgHeight"
-                src="https://tap-multimedia-1113.nyc3.digitaloceanspaces.com/slider/3758/large/Cuspide_Wigetta_El_corazon_oscuro_1200x300.jpg"
+                src="https://tap-multimedia-1113.nyc3.digitaloceanspaces.com/slider/3789/large/202201_Gata_Blanca_Cuspide_01.png"
                 alt="Second slide"
                 />
 
